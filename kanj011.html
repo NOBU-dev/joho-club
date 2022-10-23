@@ -9,7 +9,10 @@
      <p>kanj01でログイン中</p>
      <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQmvjoIYr64HkxM-RVh0jAVM0rhDzLkNsfaK8u7H5THPFZU44AMHuvAgC9JEF8G-etjZTfJ1er97tIy/pubhtml?widget=true&amp;headers=false">スプレッドシート1</a>
      <p>あなたのIPアドレスは</p>
-     <?php echo $_SERVER['REMOTE_ADDR']; ?>
+     <?php header("Content-Type:
+text/plain;charset=UTF-8");
+echo $_SERVER['REMOTE_ADDR'];
+?>
     </h2>
     </center>
   </body>
